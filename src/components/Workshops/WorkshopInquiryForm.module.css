@@ -1,0 +1,227 @@
+/* WorkshopInquiryForm.module.css */
+
+.section {
+    padding: var(--spacing-xxl) var(--spacing-lg);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--neutral-white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+    margin-left: 4px;
+}
+
+.input,
+.select,
+.textarea {
+    padding: 0.875rem 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+
+.textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Custom Checkbox Styling */
+.checkboxGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.checkboxLabel:hover {
+    background-color: #e9ecef;
+}
+
+/* Hidden real checkbox */
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.checkbox::before {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    transform: scale(0);
+    transition: 0.2s transform ease-in-out;
+}
+
+.checkbox:checked {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.checkbox:checked::before {
+    transform: scale(1);
+}
+
+/* Highlight label when checked */
+.checkboxLabel:has(.checkbox:checked) {
+    background-color: rgba(0, 102, 204, 0.08);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+/* Submit Button */
+.submitButton {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #00509e 100%);
+    color: var(--neutral-white);
+    padding: 1.25rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.submitButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+}
+
+.submitButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Success Message */
+.successMessage {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+}

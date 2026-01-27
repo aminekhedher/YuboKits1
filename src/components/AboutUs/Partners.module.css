@@ -1,0 +1,40 @@
+/* Partners.module.css */
+.section {
+    padding: var(--spacing-xxl) var(--spacing-lg);
+    background-color: var(--neutral-white);
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Placeholder for partner logos */
+.logoPlaceholder {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    /* Muted text */
+    opacity: 0.6;
+    padding: 1rem 2rem;
+    border: 2px dashed #ddd;
+    /* Visual placeholder cue */
+    border-radius: 8px;
+    user-select: none;
+}

@@ -1,0 +1,248 @@
+/* ProjectModal.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+}
+
+.modal {
+    background-color: var(--neutral-white);
+    border-radius: 16px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.closeButton {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: var(--spacing-xxl);
+}
+
+.header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-gray-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.meta {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.beginner {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.intermediate {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.advanced {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.time {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--dark-gray-text);
+    margin-bottom: var(--spacing-lg);
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.listItem {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.listItem::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+}
+
+.componentsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.component {
+    background-color: var(--light-gray-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--dark-gray-text);
+}
+
+.skillsList {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.button {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.primaryButton {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    border: none;
+}
+
+.primaryButton:hover {
+    background-color: #0052a3;
+}
+
+.secondaryButton {
+    background-color: var(--accent-orange);
+    color: var(--neutral-white);
+    border: none;
+}
+
+.secondaryButton:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        padding: var(--spacing-lg);
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        height: 200px;
+    }
+}

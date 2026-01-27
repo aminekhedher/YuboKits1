@@ -1,0 +1,64 @@
+/* FlipCard.module.css */
+
+.scene {
+    background-color: transparent;
+    width: 90%;
+    height: 350px;
+    /* Reduced height for lengthwise/horizontal cards */
+    perspective: 1000px;
+    /* Essential for 3D effect */
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout for lengthwise design */
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--spacing-lg);
+    background-color: var(--neutral-white);
+    border: 2px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.front {
+    color: var(--dark-gray-text);
+    z-index: 2;
+}
+
+.back {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    transform: rotateY(180deg);
+    /* Start rotated so it's behind */
+    justify-content: center;
+    /* Center back content */
+    padding: var(--spacing-xl);
+}
+
+/* Optional: Hover effect to suggest interactivity */
+.scene:hover .card:not(.flipped) {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

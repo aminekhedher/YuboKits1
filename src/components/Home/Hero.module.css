@@ -1,0 +1,139 @@
+/* Hero.module.css */
+
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* At least 90vh tall as requested */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--neutral-white);
+    overflow: hidden;
+    /* Background Image */
+    background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd9009?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    /* Place content above overlay */
+    padding: 0 var(--spacing-lg);
+    max-width: 800px;
+    animation: fadeIn 1s ease-out;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: var(--spacing-xxl);
+    opacity: 0.9;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+/* Button Base Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 8px;
+    /* Rounded corners but not full pill for modern tech look */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Button (Orange) */
+.btnPrimary {
+    background-color: var(--accent-orange);
+    color: var(--neutral-white);
+    border: 2px solid var(--accent-orange);
+}
+
+.btnPrimary:hover {
+    background-color: #e68a00;
+    /* Darker shade of orange */
+    border-color: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 153, 0, 0.3);
+}
+
+/* Secondary Button (White) */
+.btnSecondary {
+    background-color: var(--neutral-white);
+    color: var(--primary-blue);
+    border: 2px solid var(--neutral-white);
+}
+
+.btnSecondary:hover {
+    background-color: transparent;
+    color: var(--neutral-white);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

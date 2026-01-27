@@ -1,0 +1,79 @@
+/* Global Styles & Design System */
+
+:root {
+  /* Colors */
+  --primary-blue: #043484;
+  --accent-cyan: #01CDE8;
+  /* Formerly orange, updated to new palette */
+  --accent-orange: #01CDE8;
+  /* Keeping variable for backward compatibility */
+  --neutral-white: #ffffff;
+  --light-gray-bg: #f4f6f9;
+  /* Slight blue tint */
+  --dark-gray-text: #140d14;
+  --footer-bg: #140d14;
+
+  /* Typography */
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+
+  /* Screen Sizes (for reference in JS or if using CSS variables for media queries - not standard, but good to know) */
+  --mobile-breakpoint: 768px;
+  --tablet-breakpoint: 1024px;
+}
+
+/* Reset & Normalization */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  /* Base size for REM units */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--light-gray-bg);
+  color: var(--dark-gray-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utility Classes could go here or in a separate file, keeping global clean for now */

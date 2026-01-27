@@ -1,0 +1,46 @@
+/* WhoWeAre.module.css */
+
+.section {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    background-color: var(--neutral-white);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-lg);
+}
+
+.text {
+    font-size: 1.25rem;
+    color: var(--dark-gray-text);
+    margin-bottom: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-white);
+    background-color: var(--primary-blue);
+    border-radius: 50px;
+    /* Pill shape */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
+}
+
+.btn:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
