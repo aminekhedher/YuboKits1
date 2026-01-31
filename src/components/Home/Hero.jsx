@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
+import videoBg from '../../assets/hero-video.mp4';
 
 const Hero = () => {
     return (
         <section className={styles.heroSection}>
+            <video className={styles.videoBackground} autoPlay loop muted playsInline>
+                <source src={videoBg} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div className={styles.overlay}></div>
 
             <div className={styles.content}>

@@ -9,6 +9,8 @@ const RoboticsPlatformPage = lazy(() => import('./pages/RoboticsPlatformPage'));
 const WorkshopsPage = lazy(() => import('./pages/WorkshopsPage'));
 
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const ShopPage = lazy(() => import('./pages/ShopPage'));
 
 // Placeholder components for other routes to prevent errors until built
 const PlaceholderPage = ({ title }) => (
@@ -48,8 +50,8 @@ function App() {
             <Route path="/workshops" element={<WorkshopsPage />} />
             <Route path="/3d-printing" element={<PlaceholderPage title="3D Printing" />} />
             <Route path="/about" element={<AboutUsPage />} />
-            <Route path="/shop" element={<PlaceholderPage title="Shop" />} />
-            <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<PlaceholderPage title="404 - Page Not Found" />} />
           </Routes>
         </Suspense>

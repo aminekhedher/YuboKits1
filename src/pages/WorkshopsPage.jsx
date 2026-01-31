@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import WorkshopHero from '../components/Workshops/WorkshopHero';
+import LatestWorkshop from '../components/Workshops/LatestWorkshop';
 import WorkshopBenefits from '../components/Workshops/WorkshopBenefits';
 import WorkshopTypeCard from '../components/Workshops/WorkshopTypeCard';
 import Accordion from '../components/Workshops/Accordion';
 import WorkshopInquiryForm from '../components/Workshops/WorkshopInquiryForm';
-import TestimonialGallery from '../components/Workshops/TestimonialGallery';
-import { workshopTypes, workshopDetails, faqs } from '../data/workshopData';
+import { workshopTypes, faqs } from '../data/workshopData';
 import styles from './WorkshopsPage.module.css'; // Assuming you might create this later, but for now using inline styles
 
 const WorkshopsPage = () => {
@@ -29,14 +29,7 @@ const WorkshopsPage = () => {
                 </div>
             </section>
 
-            <section className={`${styles.section} ${styles.bgLight}`}>
-                <div className={styles.container}>
-                    <h2 className={styles.title}>What to Expect</h2>
-                    <Accordion items={workshopDetails} allowMultiple />
-                </div>
-            </section>
-
-            <TestimonialGallery />
+            <LatestWorkshop />
 
             <section className={styles.section}>
                 <div className={styles.container}>

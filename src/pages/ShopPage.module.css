@@ -1,0 +1,145 @@
+.shopContainer {
+    min-height: 100vh;
+    background-color: var(--light-gray-bg);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 51, 102, 0.9)),
+        url('../assets/robotic-arm.png') no-repeat center center/cover;
+    padding: 8rem 1rem 6rem;
+    text-align: center;
+    color: var(--neutral-white);
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    animation: fadeInDown 0.8s ease;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.layoutContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.mainLayout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.mobileFilterBtn {
+    display: none;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.noProducts {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 5rem 0;
+    background: var(--neutral-white);
+    border-radius: 12px;
+}
+
+.resetBtn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background: var(--primary-blue);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .productsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .mainLayout {
+        grid-template-columns: 240px 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .layoutContainer {
+        padding: 2rem 1rem;
+    }
+
+    .sidebarWrapper {
+        display: none;
+    }
+
+    .mobileFilterBtn {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background: var(--neutral-white);
+        color: var(--primary-blue);
+        border: 1px solid var(--primary-blue);
+        border-radius: 8px;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    .heroTitle {
+        font-size: 2.25rem;
+    }
+
+    .hero {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+    }
+}

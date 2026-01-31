@@ -1,6 +1,10 @@
 import React from 'react';
 import FlipCard from '../UI/FlipCard';
 import styles from './WhyChooseUs.module.css';
+import accessibleIcon from '../../assets/accessible.png';
+import engineeringIcon from '../../assets/engineering.png';
+import interactionIcon from '../../assets/interaction.png';
+import communityIcon from '../../assets/community.png';
 
 const WhyChooseUs = () => {
     const cardsData = [
@@ -8,25 +12,25 @@ const WhyChooseUs = () => {
             id: 1,
             title: "Accessible robotic educational kits",
             description: "Making advanced robotics look easy through STEM educational kits, learning it while building it.",
-            icon: "◓" // Circle for education/learning
+            icon: accessibleIcon
         },
         {
             id: 2,
             title: "Built by engineers to engineers",
             description: "Carefully crafted be educators and engineers for the future minds and the upcoming generations.",
-            icon: "⚙" // Gear for engineering
+            icon: engineeringIcon
         },
         {
             id: 3,
             title: "Interchangeable parts",
             description: "Creative designs and interchangeable components exploring unlimited combinations and innovations.",
-            icon: "↻" // Circular arrow for interchange
+            icon: interactionIcon
         },
         {
             id: 4,
             title: "Development community",
             description: "open source codes and schematics, easy access to complex programming and 3D designing.",
-            icon: "⚉" // Multiple dots for community
+            icon: communityIcon
         }
     ];
 
@@ -41,7 +45,7 @@ const WhyChooseUs = () => {
                             key={card.id}
                             frontContent={
                                 <div className={styles.cardContent}>
-                                    <div className={styles.cardIcon}>{card.icon}</div>
+                                    <img src={card.icon} alt={card.title} className={styles.cardIcon} />
                                     <h3 className={styles.cardTitle}>{card.title}</h3>
                                     <span className={styles.clickBadge}>Click me</span>
                                 </div>

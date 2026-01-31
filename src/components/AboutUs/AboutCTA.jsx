@@ -8,7 +8,7 @@ const AboutCTA = () => {
             <div className={styles.container}>
                 <h2 className={styles.title}>Ready to Join Our Mission?</h2>
                 <p className={styles.subtitle}>
-                    Whether you're an educator, parent, or student, there's a place for you in the Neobotic community.
+                    Whether you're an educator, parent, or student, there's a place for you in the YuboKits community.
                 </p>
                 <div className={styles.buttonGroup}>
                     <Link to="/robotics-platform" className={`${styles.button} ${styles.primary}`}>

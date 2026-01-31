@@ -30,7 +30,15 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     z-index: 1001;
-    /* Ensure above mobile menu overlay */
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    height: 70px;
+    /* Adjusted height for Navbar */
+    width: auto;
+    object-fit: contain;
 }
 
 /* Desktop Navigation */
@@ -78,8 +86,31 @@
     font-weight: 600;
 }
 
-.activeLink::after {
+.navLink.activeLink::after {
     width: 100%;
+}
+
+/* Shop Button Style */
+.shopBtn {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white) !important;
+    padding: 0.6rem 1.25rem !important;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+}
+
+.shopBtn:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.3);
+}
+
+.shopBtn.activeLink {
+    background-color: var(--accent-orange);
+    /* Different color when on shop page */
+    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.3);
 }
 
 /* Mobile Hamburger Toggle */
@@ -145,6 +176,13 @@
         font-size: 1.25rem;
         width: 100%;
         display: block;
+    }
+
+    .shopBtn {
+        width: 100%;
+        text-align: center;
+        margin-top: var(--spacing-md);
+        font-size: 1.25rem;
     }
 
     /* Hamburger Animation State */

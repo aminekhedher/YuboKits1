@@ -1,0 +1,125 @@
+/* SimpleContactForm.module.css */
+.section {
+    padding: 5rem 1rem;
+    background-color: var(--light-gray-bg);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+.form {
+    background-color: var(--neutral-white);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea,
+.select {
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    background-color: var(--neutral-white);
+    box-shadow: 0 0 0 4px rgba(1, 205, 232, 0.1);
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: #032a6a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(4, 52, 132, 0.2);
+}
+
+.error {
+    border-color: #fc8181;
+}
+
+.errorMessage {
+    color: #e53e3e;
+    font-size: 0.75rem;
+    margin-top: 0.35rem;
+    font-weight: 600;
+}
+
+.submitError {
+    background-color: #fff5f5;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #feb2b2;
+    text-align: center;
+}
+
+.successMessage {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--neutral-white);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.successIcon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 2rem 1.5rem;
+    }
+}

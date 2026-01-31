@@ -1,0 +1,66 @@
+/* SocialLinks.module.css */
+.section {
+    padding: 5rem 1rem;
+    background-color: var(--neutral-white);
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.description {
+    color: var(--text-light);
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.iconRow {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.socialLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #4a5568;
+    transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+    color: var(--accent-cyan);
+    transform: translateY(-3px);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 0.25rem;
+}
+
+.label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+    .iconRow {
+        gap: 1.5rem;
+    }
+}

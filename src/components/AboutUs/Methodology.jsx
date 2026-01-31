@@ -5,7 +5,7 @@ const Methodology = () => {
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <h2 className={styles.title}>The Neobotic Method</h2>
+                <h2 className={styles.title}>The YuboKits Method</h2>
                 <div className={styles.grid}>
                     <div className={styles.step}>
                         <div className={styles.stepNumber}>1</div>

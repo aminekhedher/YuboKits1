@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -30,8 +31,8 @@ const Navbar = () => {
         { name: 'Workshops', path: '/workshops' },
         { name: '3D Printing', path: '/3d-printing' },
         { name: 'About Us', path: '/about' },
-        { name: 'Shop', path: '/shop' },
         { name: 'Contact', path: '/contact' },
+        { name: 'Shop', path: '/shop', isButton: true },
     ];
 
     return (
@@ -40,7 +41,7 @@ const Navbar = () => {
                 <div className={styles.container}>
                     {/* Logo */}
                     <Link to="/" className={styles.logo} onClick={closeMenu}>
-                        YuboKits
+                        <img src={logo} alt="YuboKits Logo" className={styles.logoImg} />
                     </Link>
 
                     {/* Mobile Hamburger Button */}
@@ -62,9 +63,10 @@ const Navbar = () => {
                                 <li key={link.name}>
                                     <NavLink
                                         to={link.path}
-                                        className={({ isActive }) =>
-                                            isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink
-                                        }
+                                        className={({ isActive }) => {
+                                            const baseClass = link.isButton ? styles.shopBtn : styles.navLink;
+                                            return isActive ? `${baseClass} ${styles.activeLink}` : baseClass;
+                                        }}
                                         onClick={closeMenu}
                                     >
                                         {link.name}

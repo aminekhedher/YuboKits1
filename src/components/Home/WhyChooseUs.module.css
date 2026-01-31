@@ -59,9 +59,10 @@
 }
 
 .cardIcon {
-    font-size: 3rem;
-    flex-shrink: 0;
-    color: var(--primary-blue);
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
 }
 
 .cardTitle {

@@ -23,12 +23,6 @@ const StoryTimeline = () => {
                     ))}
                 </div>
 
-                <div className={styles.founderQuote}>
-                    <p className={styles.quoteText}>
-                        "I started Neobotic because I believe every child is an inventor at heart. They just need the right tools and a little encouragement to build the future."
-                    </p>
-                    <p className={styles.quoteAuthor}>- Alex Chen, Founder</p>
-                </div>
             </div>
         </section>
     );
