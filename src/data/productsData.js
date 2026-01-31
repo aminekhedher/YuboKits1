@@ -14,23 +14,6 @@ import robokit13 from '../assets/robokit13.jpg';
 
 export const products = [
     {
-        id: 1,
-        name: "Rover Robotic Kit",
-        category: "Cars",
-        price: "$149",
-        description: "Build a programmable rover that navigates obstacles autonomously",
-        fullDescription: "This complete kit teaches sensor integration, basic programming, and mechanical engineering. Perfect for beginners aged 10+. Master the fundamentals of robotics with our flagship rover kit.",
-        images: [robokit1, robokit2],
-        features: ["Ultrasonic sensors", "Arduino compatible", "Wireless control", "3D printable parts"],
-        specs: {
-            "Age Range": "10-16 years",
-            "Difficulty": "Beginner",
-            "Build Time": "4-6 hours",
-            "Programming": "Block-based & Python",
-            "Sensors": "Ultrasonic, Infrared"
-        }
-    },
-    {
         id: 2,
         name: "Explorer Robotic Kit",
         category: "Cars",

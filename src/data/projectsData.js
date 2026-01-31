@@ -16,8 +16,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 7 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 4 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 6 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 3 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -29,20 +29,6 @@ export const categories = [
 
 export const projectsByCategory = {
     cars: [
-        {
-            id: 'car-rover',
-            name: 'Rover Robotic Kit',
-            category: 'cars',
-            image: robokit1,
-            description: 'Build a programmable rover that navigates obstacles autonomously',
-            difficulty: 'Beginner',
-            time: '4-6 hours',
-            githubUrl: '#',
-            pdfUrl: '#',
-            learningObjectives: ['Sensor integration', 'Basic programming', 'Mechanical concepts'],
-            components: ['Ultrasonic sensors', 'Arduino board', 'Motor driver'],
-            skills: ['Robotics', 'Programming', 'Electronics']
-        },
         {
             id: 'car-explorer',
             name: 'Explorer Robotic Kit',
