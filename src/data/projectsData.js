@@ -7,6 +7,7 @@ import robokit11 from '../assets/robokit11.jpg';
 import robokit13 from '../assets/robokit13.jpg';
 import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
+import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
