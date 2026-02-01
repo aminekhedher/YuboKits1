@@ -30,6 +30,7 @@ import obstacleImg1 from '../assets/tsawer/capteur obstacl car/karhbacapteur obs
 import obstacleImg2 from '../assets/tsawer/capteur obstacl car/capteur obs cap.jpg';
 import motorsImg1 from '../assets/tsawer/6 motors/6 motor car.jpg';
 import motorsImg2 from '../assets/tsawer/6 motors/karhbaaar.jpg';
+import armVideo from '../assets/arm video.mp4';
 
 export const products = [
     {
@@ -90,7 +91,7 @@ export const products = [
         price: "$199",
         description: "4-Axis robotic arm with high precision servos",
         fullDescription: "Explore industrial automation. This arm can pick and place objects with millimeter precision.",
-        images: [robokit9, robokit10, armElec],
+        images: [robokit9, robokit10, armElec, armVideo],
         features: ["4-Axis movement", "Exchangeable grippers", "Inverse kinematics support", "Memory play feature"],
         specs: {
             "Age Range": "14+ years",
