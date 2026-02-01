@@ -24,7 +24,8 @@ const PlaceholderPage = ({ title }) => (
     flexDirection: 'column'
   }}>
     <h1 style={{ color: 'var(--primary-blue)', marginBottom: '1rem' }}>{title}</h1>
-    <p>This page is currently under construction.</p>
+    <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Coming Soon</p>
+    <p>This section is currently under development.</p>
   </div>
 );
 
@@ -48,7 +49,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/robotics-platform" element={<RoboticsPlatformPage />} />
             <Route path="/workshops" element={<WorkshopsPage />} />
-            <Route path="/3d-printing" element={<PlaceholderPage title="3D Printing (Coming Soon)" />} />
+            <Route path="/3d-printing" element={<PlaceholderPage title="3D Printing" />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/contact" element={<ContactPage />} />
