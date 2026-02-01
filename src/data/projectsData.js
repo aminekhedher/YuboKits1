@@ -79,7 +79,7 @@ export const projectsByCategory = {
             id: 'car-terrain',
             name: 'All-Terrain Robot',
             category: 'cars',
-            image: terrainImg1,
+            image: terrainImg2,
             description: 'Powerful 4WD robot designed to conquer rough outdoors and uneven surfaces',
             difficulty: 'Intermediate',
             time: '6-8 hours',

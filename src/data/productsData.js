@@ -146,7 +146,7 @@ export const products = [
         price: "$169",
         description: "Powerful 4WD robot designed to conquer rough outdoors and uneven surfaces",
         fullDescription: "Master the outdoors with the All-Terrain Robot. This kit features high-torque motors and heavy-duty treads, making it capable of climbing steep inclines and navigating rocky terrain with ease.",
-        images: [terrainImg1, terrainImg2],
+        images: [terrainImg2, terrainImg1],
         features: ["4-Wheel Drive", "High-grip treads", "Shock absorption", "Long-range control"],
         specs: {
             "Age Range": "12+ years",
