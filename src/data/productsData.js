@@ -16,6 +16,8 @@ import armElec from '../assets/tsawer/robot arm elect.jpg';
 import droneVideo from '../assets/tsawer/final-assem.mp4';
 import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import trashImg2 from '../assets/tsawer/zebla/zebla elec (2).jpg';
+import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
+import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
 
 export const products = [
     {
@@ -135,6 +137,23 @@ export const products = [
             "Build Time": "2-4 hours",
             "Programming": "Block-based",
             "Sensors": "Ultrasonic"
+        }
+    },
+    {
+        id: 9,
+        name: "All-Terrain Robot",
+        category: "Cars",
+        price: "$169",
+        description: "Powerful 4WD robot designed to conquer rough outdoors and uneven surfaces",
+        fullDescription: "Master the outdoors with the All-Terrain Robot. This kit features high-torque motors and heavy-duty treads, making it capable of climbing steep inclines and navigating rocky terrain with ease.",
+        images: [terrainImg1, terrainImg2],
+        features: ["4-Wheel Drive", "High-grip treads", "Shock absorption", "Long-range control"],
+        specs: {
+            "Age Range": "12+ years",
+            "Difficulty": "Intermediate",
+            "Build Time": "6-8 hours",
+            "Programming": "C++ / Python",
+            "Motors": "4 x 12V High Torque"
         }
     }
 ];

@@ -6,6 +6,7 @@ import robokit9 from '../assets/robokit9.jpg';
 import robokit11 from '../assets/robokit11.jpg';
 import robokit13 from '../assets/robokit13.jpg';
 import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
+import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -18,8 +19,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 7 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 3 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 8 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 4 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -73,6 +74,20 @@ export const projectsByCategory = {
             learningObjectives: ['Logistics automation', 'Precision route following'],
             components: ['Torque motors', 'Load sensor'],
             skills: ['Automation', 'Route Planning']
+        },
+        {
+            id: 'car-terrain',
+            name: 'All-Terrain Robot',
+            category: 'cars',
+            image: terrainImg1,
+            description: 'Powerful 4WD robot designed to conquer rough outdoors and uneven surfaces',
+            difficulty: 'Intermediate',
+            time: '6-8 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Traction control', 'High-torque motor management'],
+            components: ['4 x High-torque motors', 'Large treads', 'L298N driver'],
+            skills: ['Mechanical Design', 'Motor Control']
         }
     ],
     arm: [
