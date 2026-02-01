@@ -11,6 +11,7 @@ import robokit10 from '../assets/robokit10.png';
 import robokit11 from '../assets/robokit11.jpg';
 import robokit12 from '../assets/robokit12.png';
 import robokit13 from '../assets/robokit13.jpg';
+import robotCarVideo from '../assets/tsawer/ROBOT CAR.mp4';
 
 export const products = [
     {
@@ -54,7 +55,7 @@ export const products = [
         price: "$179",
         description: "Programmable transport truck for logistics simulations",
         fullDescription: "Learn about automation in logistics. This truck can carry small loads and follow precise delivery routes.",
-        images: [robokit7, robokit8],
+        images: [robokit7, robokit8, robotCarVideo],
         features: ["High torque motors", "Cargo bed", "Working lights", "Bluetooth control"],
         specs: {
             "Age Range": "12+ years",

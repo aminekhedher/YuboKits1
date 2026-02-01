@@ -23,6 +23,13 @@ const ImageGallery = ({ images }) => {
         setTouchEnd(null);
     };
 
+    const isVideo = (url) => {
+        if (typeof url !== 'string') return false;
+        return url.toLowerCase().endsWith('.mp4') ||
+            url.toLowerCase().endsWith('.webm') ||
+            url.toLowerCase().endsWith('.ogg');
+    };
+
     return (
         <div className={styles.gallery}>
             <div
@@ -31,7 +38,17 @@ const ImageGallery = ({ images }) => {
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
-                <img src={images[activeIndex]} alt="Product" className={styles.mainImage} />
+                {isVideo(images[activeIndex]) ? (
+                    <video
+                        src={images[activeIndex]}
+                        controls
+                        autoPlay
+                        muted
+                        className={styles.mainVideo}
+                    />
+                ) : (
+                    <img src={images[activeIndex]} alt="Product" className={styles.mainImage} />
+                )}
             </div>
             <div className={styles.thumbnails}>
                 {images.map((img, idx) => (
@@ -40,7 +57,11 @@ const ImageGallery = ({ images }) => {
                         className={`${styles.thumbBtn} ${idx === activeIndex ? styles.active : ''}`}
                         onClick={() => setActiveIndex(idx)}
                     >
-                        <img src={img} alt={`Thumbnail ${idx + 1}`} className={styles.thumbImage} />
+                        {isVideo(img) ? (
+                            <div className={styles.videoThumbPlaceholder}>▶</div>
+                        ) : (
+                            <img src={img} alt={`Thumbnail ${idx + 1}`} className={styles.thumbImage} />
+                        )}
                     </button>
                 ))}
             </div>
