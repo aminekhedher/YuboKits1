@@ -13,6 +13,7 @@ import robokit12 from '../assets/robokit12.png';
 import robokit13 from '../assets/robokit13.jpg';
 import robotCarVideo from '../assets/tsawer/ROBOT CAR.mp4';
 import armElec from '../assets/tsawer/robot arm elect.jpg';
+import droneVideo from '../assets/tsawer/final-assem.mp4';
 
 export const products = [
     {
@@ -90,7 +91,7 @@ export const products = [
         price: "$249",
         description: "Professional grade DIY drone kit with stabilization",
         fullDescription: "Learn the physics of flight. Build your own quad-copter from scratch and master flight dynamics.",
-        images: [robokit11, robokit12],
+        images: [robokit11, robokit12, droneVideo],
         features: ["Flight controller", "Brushless motors", "Camera mount", "Telemetry module"],
         specs: {
             "Age Range": "16+ years",
