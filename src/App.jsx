@@ -25,7 +25,6 @@ const PlaceholderPage = ({ title }) => (
   }}>
     <h1 style={{ color: 'var(--primary-blue)', marginBottom: '1rem' }}>{title}</h1>
     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Coming Soon</p>
-    <p>This section is currently under development.</p>
   </div>
 );
 
