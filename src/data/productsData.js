@@ -22,6 +22,8 @@ import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
 import tankImg2 from '../assets/tsawer/tank/krihba.jpg';
 import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
 import sumoImg2 from '../assets/tsawer/sumo/toutterrain elect.jpg';
+import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
+import houseImg2 from '../assets/tsawer/smart house/smart house elect.jpg';
 
 export const products = [
     {
@@ -192,6 +194,23 @@ export const products = [
             "Build Time": "5-7 hours",
             "Programming": "Arduino / Custom App",
             "Sensors": "IR Edge & Ultrasonic Proximity"
+        }
+    },
+    {
+        id: 12,
+        name: "Advanced Smart House Kit",
+        category: "Engineering Projects",
+        price: "$219",
+        description: "Integrated IoT home automation system with multiple sensors and controls",
+        fullDescription: "Step into the world of IoT. The Advanced Smart House Kit allows you to build a fully automated miniature home. Control lighting, monitor temperature, and secure the premises using RFID technology. A perfect deep-dive into modern smart home engineering.",
+        images: [houseImg1, houseImg2],
+        features: ["Multi-sensor integration", "RFID security system", "Automated lighting", "Web dashboard ready"],
+        specs: {
+            "Age Range": "14+ years",
+            "Difficulty": "Intermediate",
+            "Build Time": "10-15 hours",
+            "Programming": "C++ / Python / Node-RED",
+            "Sensors": "Temp, Light, Proximity, RFID"
         }
     }
 ];

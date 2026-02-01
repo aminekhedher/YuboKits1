@@ -10,6 +10,7 @@ import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
 import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
 import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
+import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -22,14 +23,14 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 10 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 11 },
     { id: 'cars', name: 'Cars', icon: carIcon, count: 6 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
     { id: 'plane', name: 'Plane', icon: planeIcon, count: 0 },
     { id: 'arm', name: 'Robotic Arm', icon: armIcon, count: 1 },
-    { id: 'smart-house', name: 'Smart House', icon: homeIcon, count: 0 },
+    { id: 'smart-house', name: 'Smart House', icon: homeIcon, count: 1 },
     { id: 'engineering', name: 'Engineering Projects', icon: engineeringIcon, count: 2 }
 ];
 
@@ -181,6 +182,22 @@ export const projectsByCategory = {
             learningObjectives: ['Motion sensing', 'Servo control mechanics'],
             components: ['Ultrasonic sensor', 'Micro servo', 'Arduino Uno'],
             skills: ['Electronics', 'Basic Coding']
+        }
+    ],
+    'smart-house': [
+        {
+            id: 'house-smart',
+            name: 'Advanced Smart House',
+            category: 'smart-house',
+            image: houseImg1,
+            description: 'Integrated IoT home automation system with multiple sensors and controls',
+            difficulty: 'Intermediate',
+            time: '10-15 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['IoT integration', 'Smart energy management'],
+            components: ['Light sensors', 'Temperature control', 'RFID lock system'],
+            skills: ['Home Automation', 'Network Integration']
         }
     ]
 };
