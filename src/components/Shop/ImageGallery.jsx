@@ -41,9 +41,10 @@ const ImageGallery = ({ images }) => {
                 {isVideo(images[activeIndex]) ? (
                     <video
                         src={images[activeIndex]}
-                        controls
                         autoPlay
                         muted
+                        loop
+                        playsInline
                         className={styles.mainVideo}
                     />
                 ) : (
