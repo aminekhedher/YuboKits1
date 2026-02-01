@@ -48,7 +48,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/robotics-platform" element={<RoboticsPlatformPage />} />
             <Route path="/workshops" element={<WorkshopsPage />} />
-            <Route path="/3d-printing" element={<PlaceholderPage title="3D Printing" />} />
+            <Route path="/3d-printing" element={<PlaceholderPage title="3D Printing (Coming Soon)" />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/contact" element={<ContactPage />} />

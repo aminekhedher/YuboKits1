@@ -29,7 +29,7 @@ const Navbar = () => {
         { name: 'Home', path: '/' },
         { name: 'Robotics Platform', path: '/robotics-platform' },
         { name: 'Workshops', path: '/workshops' },
-        { name: '3D Printing', path: '/3d-printing' },
+        { name: '3D Printing (Coming Soon)', path: '/3d-printing' },
         { name: 'About Us', path: '/about' },
         { name: 'Contact', path: '/contact' },
         { name: 'Shop', path: '/shop', isButton: true },

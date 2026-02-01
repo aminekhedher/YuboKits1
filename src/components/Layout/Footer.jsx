@@ -21,7 +21,7 @@ const Footer = () => {
                         <Link to="/" className={styles.link}>Home</Link>
                         <Link to="/robotics-platform" className={styles.link}>Platform</Link>
                         <Link to="/workshops" className={styles.link}>Workshops</Link>
-                        <Link to="/3d-printing" className={styles.link}>3D Printing</Link>
+                        <Link to="/3d-printing" className={styles.link}>3D Printing (Coming Soon)</Link>
                         <Link to="/shop" className={styles.link}>Shop</Link>
                         <Link to="/about" className={styles.link}>About</Link>
                         <Link to="/contact" className={styles.link}>Contact</Link>
