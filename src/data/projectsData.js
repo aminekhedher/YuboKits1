@@ -13,6 +13,7 @@ import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
 import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
 import radarImg1 from '../assets/tsawer/radar/radar3d.jpg';
 import obstacleImg1 from '../assets/tsawer/capteur obstacl car/karhbacapteur obstacl 3d.jpg';
+import motorsImg1 from '../assets/tsawer/6 motors/6 motor car.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -25,8 +26,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 13 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 7 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 14 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 8 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -136,6 +137,20 @@ export const projectsByCategory = {
             learningObjectives: ['Proximity sensing', 'Autonomous decision making'],
             components: ['Ultrasonic sensor', 'L298N driver', 'Smart car chassis'],
             skills: ['Coding', 'Electronics']
+        },
+        {
+            id: 'car-6motors',
+            name: '6-Wheel Drive Explorer',
+            category: 'cars',
+            image: motorsImg1,
+            description: 'Advanced 6WD robotic chassis designed for maximum traction and performance on difficult landscapes',
+            difficulty: 'Advanced',
+            time: '8-10 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Multi-motor synchronization', 'Independent suspension physics'],
+            components: ['6 x DC High Torque Motors', 'Reinforced chassis', 'High-current motor driver'],
+            skills: ['Mechanical Engineering', 'Power Systems']
         }
     ],
     arm: [

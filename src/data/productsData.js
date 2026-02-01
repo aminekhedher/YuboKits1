@@ -28,6 +28,8 @@ import radarImg1 from '../assets/tsawer/radar/radar3d.jpg';
 import radarImg2 from '../assets/tsawer/radar/radar.jpg';
 import obstacleImg1 from '../assets/tsawer/capteur obstacl car/karhbacapteur obstacl 3d.jpg';
 import obstacleImg2 from '../assets/tsawer/capteur obstacl car/capteur obs cap.jpg';
+import motorsImg1 from '../assets/tsawer/6 motors/6 motor car.jpg';
+import motorsImg2 from '../assets/tsawer/6 motors/karhbaaar.jpg';
 
 export const products = [
     {
@@ -249,6 +251,23 @@ export const products = [
             "Build Time": "4-5 hours",
             "Programming": "C++ / Block-based",
             "Sensors": "Ultrasonic HC-SR04"
+        }
+    },
+    {
+        id: 15,
+        name: "6-Wheel Drive Explorer",
+        category: "Cars",
+        price: "$199",
+        description: "Advanced 6WD robotic chassis designed for maximum traction and performance on difficult landscapes",
+        fullDescription: "Push the boundaries of off-road robotics. The 6-Wheel Drive Explorer is our most robust mobile platform, featuring six independent high-torque motors. This kit is perfect for advanced students looking to master complex motor synchronization and power management in heavy-duty robotic systems.",
+        images: [motorsImg1, motorsImg2],
+        features: ["6-Wheel independent drive", "Enhanced load capacity", "Rugged all-terrain tires", "Professional grade driver boards"],
+        specs: {
+            "Age Range": "14+ years",
+            "Difficulty": "Advanced",
+            "Build Time": "8-10 hours",
+            "Programming": "C++ / ROS ready",
+            "Motors": "6 x 12V 100RPM"
         }
     }
 ];
