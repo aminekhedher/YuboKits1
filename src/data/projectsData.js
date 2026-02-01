@@ -5,7 +5,6 @@ import robokit7 from '../assets/robokit7.jpg';
 import robokit9 from '../assets/robokit9.jpg';
 import robokit11 from '../assets/robokit11.jpg';
 import robokit13 from '../assets/robokit13.jpg';
-import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
 import carIcon from '../assets/car.png';
@@ -63,7 +62,6 @@ export const projectsByCategory = {
             name: 'Heavy Duty Truck Kit',
             category: 'cars',
             image: robokit7,
-            video: truckTuto,
             description: 'Programmable transport truck for logistics simulations',
             difficulty: 'Intermediate',
             time: '8-10 hours',
