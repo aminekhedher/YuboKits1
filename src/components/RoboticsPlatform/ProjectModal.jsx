@@ -29,7 +29,16 @@ const ProjectModal = ({ project, onClose }) => {
                 </button>
 
                 <div className={styles.imageContainer}>
-                    <img src={project.image} alt={project.name} className={styles.image} />
+                    {project.video ? (
+                        <video
+                            src={project.video}
+                            controls
+                            className={styles.video}
+                            poster={project.image}
+                        />
+                    ) : (
+                        <img src={project.image} alt={project.name} className={styles.image} />
+                    )}
                 </div>
 
                 <div className={styles.content}>
