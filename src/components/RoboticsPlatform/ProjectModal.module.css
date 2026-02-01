@@ -130,6 +130,17 @@
     margin-bottom: var(--spacing-md);
 }
 
+.videoSection {
+    margin-bottom: var(--spacing-xl);
+}
+
+.tutorialVideo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 12px;
+}
+
 .description {
     font-size: 1rem;
     line-height: 1.7;
