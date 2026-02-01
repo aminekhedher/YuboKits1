@@ -20,6 +20,8 @@ import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
 import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
 import tankImg2 from '../assets/tsawer/tank/krihba.jpg';
+import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
+import sumoImg2 from '../assets/tsawer/sumo/toutterrain elect.jpg';
 
 export const products = [
     {
@@ -173,6 +175,23 @@ export const products = [
             "Build Time": "7-9 hours",
             "Programming": "C++ / Python",
             "Drive System": "Continuous Tracks"
+        }
+    },
+    {
+        id: 11,
+        name: "Sumo Battle Bot",
+        category: "Cars",
+        price: "$149",
+        description: "Highly aggressive and compact robot designed for Sumo wrestling competitions",
+        fullDescription: "Built for dominance in the arena. The Sumo Battle Bot is a low-profile, high-traction machine engineered to push opponents out of the ring. Master the tactics of competitive robotics with this tournament-ready kit.",
+        images: [sumoImg1, sumoImg2],
+        features: ["Ultra-high torque motors", "Precision edge detection", "Weighted chassis for traction", "Bluetooth fighting mode"],
+        specs: {
+            "Age Range": "10+ years",
+            "Difficulty": "Intermediate",
+            "Build Time": "5-7 hours",
+            "Programming": "Arduino / Custom App",
+            "Sensors": "IR Edge & Ultrasonic Proximity"
         }
     }
 ];

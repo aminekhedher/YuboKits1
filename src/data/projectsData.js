@@ -9,6 +9,7 @@ import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
 import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
+import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -21,8 +22,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 9 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 5 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 10 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 6 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -104,6 +105,20 @@ export const projectsByCategory = {
             learningObjectives: ['Tracked locomotion physics', 'Obstacle clearance'],
             components: ['Dual motor tracks', 'Steel chassis', 'ESP32 controller'],
             skills: ['Mechanical Engineering', 'Advanced Robotics']
+        },
+        {
+            id: 'car-sumo',
+            name: 'Sumo Battle Bot',
+            category: 'cars',
+            image: sumoImg1,
+            description: 'Highly aggressive and compact robot designed for Sumo wrestling competitions',
+            difficulty: 'Intermediate',
+            time: '5-7 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Proximity detection', 'Push-force physics'],
+            components: ['High torque metal gear motors', 'IR edge sensors', 'Heavy weight plates'],
+            skills: ['Competitive Robotics', 'Sensor Logic']
         }
     ],
     arm: [
