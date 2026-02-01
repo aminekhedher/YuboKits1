@@ -5,6 +5,7 @@ import robokit7 from '../assets/robokit7.jpg';
 import robokit9 from '../assets/robokit9.jpg';
 import robokit11 from '../assets/robokit11.jpg';
 import robokit13 from '../assets/robokit13.jpg';
+import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -17,7 +18,7 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 6 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 7 },
     { id: 'cars', name: 'Cars', icon: carIcon, count: 3 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
@@ -25,7 +26,7 @@ export const categories = [
     { id: 'plane', name: 'Plane', icon: planeIcon, count: 0 },
     { id: 'arm', name: 'Robotic Arm', icon: armIcon, count: 1 },
     { id: 'smart-house', name: 'Smart House', icon: homeIcon, count: 0 },
-    { id: 'engineering', name: 'Engineering Projects', icon: engineeringIcon, count: 1 }
+    { id: 'engineering', name: 'Engineering Projects', icon: engineeringIcon, count: 2 }
 ];
 
 export const projectsByCategory = {
@@ -120,6 +121,20 @@ export const projectsByCategory = {
             learningObjectives: ['Biomimicry', 'Complex gait generation'],
             components: ['12 x Mini Servos', 'Arduino Mega'],
             skills: ['Biomimicry', 'Complex Motion']
+        },
+        {
+            id: 'engineering-trash',
+            name: 'Electric Trash',
+            category: 'engineering',
+            image: trashImg1,
+            description: 'Automatic smart trash bin with motion sensing capabilities',
+            difficulty: 'Beginner',
+            time: '2-4 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Motion sensing', 'Servo control mechanics'],
+            components: ['Ultrasonic sensor', 'Micro servo', 'Arduino Uno'],
+            skills: ['Electronics', 'Basic Coding']
         }
     ]
 };

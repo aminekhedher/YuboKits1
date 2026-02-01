@@ -14,6 +14,8 @@ import robokit13 from '../assets/robokit13.jpg';
 import robotCarVideo from '../assets/tsawer/ROBOT CAR.mp4';
 import armElec from '../assets/tsawer/robot arm elect.jpg';
 import droneVideo from '../assets/tsawer/final-assem.mp4';
+import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
+import trashImg2 from '../assets/tsawer/zebla/zebla elec (2).jpg';
 
 export const products = [
     {
@@ -116,6 +118,23 @@ export const products = [
             "Build Time": "15+ hours",
             "Programming": "C++ / Python",
             "Movement": "6-legged gait"
+        }
+    },
+    {
+        id: 8,
+        name: "Electric Trash",
+        category: "Engineering Projects",
+        price: "$89",
+        description: "Automatic smart trash bin with motion sensing capabilities",
+        fullDescription: "Build your own smart home appliance. This electric trash bin uses ultrasonic sensors to detect proximity and automatically opens its lid using a precision servo motor.",
+        images: [trashImg1, trashImg2],
+        features: ["Motion detection", "Automatic lid", "Internal LED indicator", "Energy efficient"],
+        specs: {
+            "Age Range": "8+ years",
+            "Difficulty": "Beginner",
+            "Build Time": "2-4 hours",
+            "Programming": "Block-based",
+            "Sensors": "Ultrasonic"
         }
     }
 ];
