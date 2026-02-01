@@ -79,14 +79,16 @@ const ProjectModal = ({ project, onClose }) => {
                     </div>
 
                     {project.video && (
-                        <div className={styles.videoSection}>
+                        <>
                             <h3 className={styles.sectionTitle}>Video Tutorial</h3>
-                            <video
-                                src={project.video}
-                                controls
-                                className={styles.tutorialVideo}
-                            />
-                        </div>
+                            <div className={styles.videoSection}>
+                                <video
+                                    src={project.video}
+                                    controls
+                                    className={styles.tutorialVideo}
+                                />
+                            </div>
+                        </>
                     )}
 
                     <div className={styles.actions}>
