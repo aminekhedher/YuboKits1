@@ -12,6 +12,7 @@ import robokit11 from '../assets/robokit11.jpg';
 import robokit12 from '../assets/robokit12.png';
 import robokit13 from '../assets/robokit13.jpg';
 import robotCarVideo from '../assets/tsawer/ROBOT CAR.mp4';
+import armElec from '../assets/tsawer/robot arm elect.jpg';
 
 export const products = [
     {
@@ -72,7 +73,7 @@ export const products = [
         price: "$199",
         description: "4-Axis robotic arm with high precision servos",
         fullDescription: "Explore industrial automation. This arm can pick and place objects with millimeter precision.",
-        images: [robokit9, robokit10],
+        images: [robokit9, robokit10, armElec],
         features: ["4-Axis movement", "Exchangeable grippers", "Inverse kinematics support", "Memory play feature"],
         specs: {
             "Age Range": "14+ years",
