@@ -26,6 +26,8 @@ import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
 import houseImg2 from '../assets/tsawer/smart house/smart house elect.jpg';
 import radarImg1 from '../assets/tsawer/radar/radar3d.jpg';
 import radarImg2 from '../assets/tsawer/radar/radar.jpg';
+import obstacleImg1 from '../assets/tsawer/capteur obstacl car/karhbacapteur obstacl 3d.jpg';
+import obstacleImg2 from '../assets/tsawer/capteur obstacl car/capteur obs cap.jpg';
 
 export const products = [
     {
@@ -230,6 +232,23 @@ export const products = [
             "Build Time": "4-6 hours",
             "Programming": "Arduino / Processing",
             "Sensors": "HC-SR04 Ultrasonic"
+        }
+    },
+    {
+        id: 14,
+        name: "Obstacle Avoidance Car",
+        category: "Cars",
+        price: "$129",
+        description: "Autonomous vehicle that navigates complex environments by detecting and avoiding obstacles in real-time",
+        fullDescription: "The perfect entry point into autonomous vehicles. This kit combines mechanical assembly with sensor-driven logic. Watch your creation navigate through a maze of obstacles using ultrasonic 'eyes' to see its surroundings. It's a foundational project for understanding robotics intelligence.",
+        images: [obstacleImg1, obstacleImg2],
+        features: ["Smart obstacle detection", "Adjustable sensitivity", "Compact 2WD design", "Extendable sensor mount"],
+        specs: {
+            "Age Range": "8+ years",
+            "Difficulty": "Beginner",
+            "Build Time": "4-5 hours",
+            "Programming": "C++ / Block-based",
+            "Sensors": "Ultrasonic HC-SR04"
         }
     }
 ];

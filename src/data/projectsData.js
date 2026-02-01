@@ -12,6 +12,7 @@ import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
 import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
 import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
 import radarImg1 from '../assets/tsawer/radar/radar3d.jpg';
+import obstacleImg1 from '../assets/tsawer/capteur obstacl car/karhbacapteur obstacl 3d.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -24,8 +25,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 12 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 6 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 13 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 7 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -121,6 +122,20 @@ export const projectsByCategory = {
             learningObjectives: ['Proximity detection', 'Push-force physics'],
             components: ['High torque metal gear motors', 'IR edge sensors', 'Heavy weight plates'],
             skills: ['Competitive Robotics', 'Sensor Logic']
+        },
+        {
+            id: 'car-obstacle',
+            name: 'Obstacle Avoidance Car',
+            category: 'cars',
+            image: obstacleImg1,
+            description: 'Autonomous vehicle that navigates complex environments by detecting and avoiding obstacles in real-time',
+            difficulty: 'Beginner',
+            time: '4-5 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Proximity sensing', 'Autonomous decision making'],
+            components: ['Ultrasonic sensor', 'L298N driver', 'Smart car chassis'],
+            skills: ['Coding', 'Electronics']
         }
     ],
     arm: [
