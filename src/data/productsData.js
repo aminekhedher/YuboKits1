@@ -199,7 +199,7 @@ export const products = [
     {
         id: 12,
         name: "Advanced Smart House Kit",
-        category: "Engineering Projects",
+        category: "Smart House",
         price: "$219",
         description: "Integrated IoT home automation system with multiple sensors and controls",
         fullDescription: "Step into the world of IoT. The Advanced Smart House Kit allows you to build a fully automated miniature home. Control lighting, monitor temperature, and secure the premises using RFID technology. A perfect deep-dive into modern smart home engineering.",
