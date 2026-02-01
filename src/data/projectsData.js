@@ -8,6 +8,7 @@ import robokit13 from '../assets/robokit13.jpg';
 import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
+import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
 import truckTuto from '../assets/tsawer/video tuto.mp4';
 
 import engineeringIcon from '../assets/engineering.png';
@@ -20,8 +21,8 @@ import planeIcon from '../assets/airplane.png';
 import homeIcon from '../assets/home-security.png';
 
 export const categories = [
-    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 8 },
-    { id: 'cars', name: 'Cars', icon: carIcon, count: 4 },
+    { id: 'all', name: 'All Projects', icon: engineeringIcon, count: 9 },
+    { id: 'cars', name: 'Cars', icon: carIcon, count: 5 },
     { id: 'truck', name: 'Truck', icon: truckIcon, count: 0 },
     { id: 'racer', name: 'Racer', icon: racerIcon, count: 0 },
     { id: 'drone', name: 'Drone', icon: droneIcon, count: 1 },
@@ -89,6 +90,20 @@ export const projectsByCategory = {
             learningObjectives: ['Traction control', 'High-torque motor management'],
             components: ['4 x High-torque motors', 'Large treads', 'L298N driver'],
             skills: ['Mechanical Design', 'Motor Control']
+        },
+        {
+            id: 'car-tank',
+            name: 'Smart TankBot',
+            category: 'cars',
+            image: tankImg1,
+            description: 'Advanced crawler robot with heavy-duty tracks for extreme terrain navigation',
+            difficulty: 'Intermediate',
+            time: '7-9 hours',
+            githubUrl: '#',
+            pdfUrl: '#',
+            learningObjectives: ['Tracked locomotion physics', 'Obstacle clearance'],
+            components: ['Dual motor tracks', 'Steel chassis', 'ESP32 controller'],
+            skills: ['Mechanical Engineering', 'Advanced Robotics']
         }
     ],
     arm: [

@@ -18,6 +18,8 @@ import trashImg1 from '../assets/tsawer/zebla/zbela.jpg';
 import trashImg2 from '../assets/tsawer/zebla/zebla elec (2).jpg';
 import terrainImg1 from '../assets/tsawer/toutterrain/karhbaaaa.jpg';
 import terrainImg2 from '../assets/tsawer/toutterrain/touterrain3d.jpg';
+import tankImg1 from '../assets/tsawer/tank/tank3d.jpg';
+import tankImg2 from '../assets/tsawer/tank/krihba.jpg';
 
 export const products = [
     {
@@ -154,6 +156,23 @@ export const products = [
             "Build Time": "6-8 hours",
             "Programming": "C++ / Python",
             "Motors": "4 x 12V High Torque"
+        }
+    },
+    {
+        id: 10,
+        name: "Smart TankBot",
+        category: "Cars",
+        price: "$189",
+        description: "Advanced crawler robot with heavy-duty tracks for extreme terrain navigation",
+        fullDescription: "The Smart TankBot is designed for serious explorers. Featuring a robust tracked drive system and a high-durability chassis, it can overcome obstacles and traverse surfaces where wheeled robots struggle.",
+        images: [tankImg1, tankImg2],
+        features: ["Dual-track drive", "All-metal chassis option", "Heavy-duty suspension", "FPV Camera ready"],
+        specs: {
+            "Age Range": "13+ years",
+            "Difficulty": "Intermediate",
+            "Build Time": "7-9 hours",
+            "Programming": "C++ / Python",
+            "Drive System": "Continuous Tracks"
         }
     }
 ];
