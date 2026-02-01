@@ -24,6 +24,8 @@ import sumoImg1 from '../assets/tsawer/sumo/sumo car.jpg';
 import sumoImg2 from '../assets/tsawer/sumo/toutterrain elect.jpg';
 import houseImg1 from '../assets/tsawer/smart house/smart house.jpg';
 import houseImg2 from '../assets/tsawer/smart house/smart house elect.jpg';
+import radarImg1 from '../assets/tsawer/radar/radar3d.jpg';
+import radarImg2 from '../assets/tsawer/radar/radar.jpg';
 
 export const products = [
     {
@@ -211,6 +213,23 @@ export const products = [
             "Build Time": "10-15 hours",
             "Programming": "C++ / Python / Node-RED",
             "Sensors": "Temp, Light, Proximity, RFID"
+        }
+    },
+    {
+        id: 13,
+        name: "Ultrasonic Radar Kit",
+        category: "Engineering Projects",
+        price: "$99",
+        description: "Advanced scanning system that maps obstacles in a 180-degree field of view",
+        fullDescription: "Master the technology used in autonomous vehicles and air traffic control. This kit uses ultrasonic waves to detect objects and visualizes them on your computer screen using Processing. A fascinating project for anyone interested in sensor tech and software visualization.",
+        images: [radarImg1, radarImg2],
+        features: ["180° sweep rotation", "Real-time visual mapping", "Compact desktop design", "Adjustable detection range"],
+        specs: {
+            "Age Range": "12+ years",
+            "Difficulty": "Intermediate",
+            "Build Time": "4-6 hours",
+            "Programming": "Arduino / Processing",
+            "Sensors": "HC-SR04 Ultrasonic"
         }
     }
 ];
